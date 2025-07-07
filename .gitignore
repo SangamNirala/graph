@@ -1,0 +1,57 @@
+# Ignore virtual environment
+.venv/
+venv/
+
+# Ignore Python cache
+__pycache__/
+*.pyc
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore node modules
+node_modules/
+
+
+
+
+
+
+# Ignore log files
+*.log
+
+# Ignore environment variable files
+.env
+.env.*
+
+# Ignore build artifacts
+dist/
+build/
+*.egg-info/
+
+# Ignore coverage reports
+htmlcov/
+.coverage
+coverage.xml
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore IDE/project files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Ignore macOS and Windows hidden files
+.DS_Store
+Thumbs.db
+
+# Ignore yarn and npm logs
+yarn-debug.log*
+yarn-error.log*
+npm-debug.log*
+
+# Ignore test output
+test-results/
