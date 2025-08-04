@@ -1,0 +1,351 @@
+{
+  "badgeCategories": {
+    "nutrition": {
+      "name": "Nutrition Mastery",
+      "color": "#4CAF50",
+      "icon": "🥗",
+      "description": "Earn badges by building healthy eating habits"
+    },
+    "tracking": {
+      "name": "Logging Legend",
+      "color": "#2196F3", 
+      "icon": "📊",
+      "description": "Master the art of consistent food logging"
+    },
+    "goals": {
+      "name": "Goal Crusher",
+      "color": "#FF9800",
+      "icon": "🎯",
+      "description": "Achieve your health and fitness goals"
+    },
+    "streaks": {
+      "name": "Streak Warrior",
+      "color": "#E91E63",
+      "icon": "🔥",
+      "description": "Maintain consistency with daily habits"
+    },
+    "social": {
+      "name": "Community Champion",
+      "color": "#9C27B0",
+      "icon": "👥",
+      "description": "Engage with the nutrition community"
+    },
+    "learning": {
+      "name": "Knowledge Seeker",
+      "color": "#607D8B",
+      "icon": "🧠",
+      "description": "Learn about nutrition and health"
+    },
+    "special": {
+      "name": "Special Events",
+      "color": "#FFC107",
+      "icon": "⭐",
+      "description": "Limited-time and seasonal achievements"
+    }
+  },
+  "badges": [
+    {
+      "id": "first_meal_log",
+      "name": "First Steps",
+      "description": "Log your first meal",
+      "category": "tracking",
+      "difficulty": "bronze",
+      "points": 10,
+      "icon": "🍽️",
+      "requirements": {
+        "meals_logged": 1
+      },
+      "unlockMessage": "Welcome to your nutrition journey! Every great journey starts with a single step."
+    },
+    {
+      "id": "week_warrior",
+      "name": "Week Warrior",
+      "description": "Log meals for 7 consecutive days",
+      "category": "streaks",
+      "difficulty": "bronze",
+      "points": 50,
+      "icon": "📅",
+      "requirements": {
+        "consecutive_days": 7
+      },
+      "unlockMessage": "You've built a solid foundation! Consistency is the key to success."
+    },
+    {
+      "id": "hydration_hero",
+      "name": "Hydration Hero",
+      "description": "Drink 8 glasses of water daily for 10 days",
+      "category": "nutrition",
+      "difficulty": "silver",
+      "points": 75,
+      "icon": "💧",
+      "requirements": {
+        "water_glasses_daily": 8,
+        "consecutive_days": 10
+      },
+      "unlockMessage": "Your cells are thanking you! Proper hydration is essential for optimal health."
+    },
+    {
+      "id": "macro_master",
+      "name": "Macro Master",
+      "description": "Hit your macro targets 5 days in a row",
+      "category": "nutrition",
+      "difficulty": "silver",
+      "points": 100,
+      "icon": "⚖️",
+      "requirements": {
+        "macro_targets_hit": 5,
+        "consecutive": true
+      },
+      "unlockMessage": "Perfect balance! You're mastering the art of macronutrient management."
+    },
+    {
+      "id": "rainbow_eater",
+      "name": "Rainbow Eater",
+      "description": "Eat 5 different colored fruits/vegetables in one day",
+      "category": "nutrition",
+      "difficulty": "bronze",
+      "points": 40,
+      "icon": "🌈",
+      "requirements": {
+        "fruit_veg_colors": 5,
+        "timeframe": "single_day"
+      },
+      "unlockMessage": "Taste the rainbow! Different colors provide different nutrients."
+    },
+    {
+      "id": "streak_master_30",
+      "name": "Streak Master",
+      "description": "Maintain a 30-day logging streak",
+      "category": "streaks",
+      "difficulty": "gold",
+      "points": 200,
+      "icon": "🔥",
+      "requirements": {
+        "consecutive_days": 30
+      },
+      "unlockMessage": "Incredible dedication! You've turned healthy habits into a lifestyle."
+    },
+    {
+      "id": "recipe_explorer",
+      "name": "Recipe Explorer", 
+      "description": "Try 10 new healthy recipes",
+      "category": "learning",
+      "difficulty": "silver",
+      "points": 80,
+      "icon": "👨‍🍳",
+      "requirements": {
+        "new_recipes_tried": 10
+      },
+      "unlockMessage": "Culinary adventure unlocked! Variety is the spice of life."
+    },
+    {
+      "id": "goal_getter",
+      "name": "Goal Getter",
+      "description": "Achieve your first weight goal",
+      "category": "goals",
+      "difficulty": "gold",
+      "points": 250,
+      "icon": "🏆",
+      "requirements": {
+        "goals_achieved": 1,
+        "goal_type": "weight"
+      },
+      "unlockMessage": "Dreams become reality through consistent action! Congratulations!"
+    },
+    {
+      "id": "social_supporter",
+      "name": "Social Supporter",
+      "description": "Encourage 20 friends with likes or comments",
+      "category": "social",
+      "difficulty": "bronze",
+      "points": 60,
+      "icon": "💪",
+      "requirements": {
+        "friend_encouragements": 20
+      },
+      "unlockMessage": "Kindness is contagious! Your support helps others succeed."
+    },
+    {
+      "id": "perfect_week",
+      "name": "Perfect Week",
+      "description": "Hit all daily nutrition targets for a full week",
+      "category": "nutrition",
+      "difficulty": "gold",
+      "points": 300,
+      "icon": "💎",
+      "requirements": {
+        "perfect_days": 7,
+        "consecutive": true,
+        "all_targets": true
+      },
+      "unlockMessage": "Perfection achieved! You're setting the gold standard for nutrition."
+    },
+    {
+      "id": "night_owl",
+      "name": "Night Owl Reformed",
+      "description": "Stop eating 3 hours before bed for 14 days",
+      "category": "nutrition",
+      "difficulty": "silver",
+      "points": 90,
+      "icon": "🌙",
+      "requirements": {
+        "early_dinner_days": 14,
+        "hours_before_bed": 3
+      },
+      "unlockMessage": "Sweet dreams! Better sleep quality comes from mindful eating timing."
+    },
+    {
+      "id": "plant_warrior",
+      "name": "Plant Warrior",
+      "description": "Eat plant-based meals for 7 consecutive days",
+      "category": "nutrition",
+      "difficulty": "silver",
+      "points": 120,
+      "icon": "🌱",
+      "requirements": {
+        "plant_based_days": 7,
+        "consecutive": true
+      },
+      "unlockMessage": "Planet and body approved! Plant power is real power."
+    },
+    {
+      "id": "centurion",
+      "name": "Centurion",
+      "description": "Log 100 meals",
+      "category": "tracking",
+      "difficulty": "silver",
+      "points": 150,
+      "icon": "💯",
+      "requirements": {
+        "total_meals_logged": 100
+      },
+      "unlockMessage": "Triple digits! You're building an incredible database of your nutrition journey."
+    },
+    {
+      "id": "weekend_warrior",
+      "name": "Weekend Warrior",
+      "description": "Maintain healthy eating habits during weekends for a month",
+      "category": "nutrition",
+      "difficulty": "gold",
+      "points": 180,
+      "icon": "🎉",
+      "requirements": {
+        "healthy_weekends": 4,
+        "consecutive_months": 1
+      },
+      "unlockMessage": "Weekend temptations conquered! True dedication knows no calendar."
+    },
+    {
+      "id": "knowledge_seeker",
+      "name": "Knowledge Seeker",
+      "description": "Read 25 nutrition tips and articles",
+      "category": "learning",
+      "difficulty": "bronze",
+      "points": 70,
+      "icon": "📚",
+      "requirements": {
+        "articles_read": 25
+      },
+      "unlockMessage": "Education empowers transformation! Knowledge is your superpower."
+    },
+    {
+      "id": "seasonal_star",
+      "name": "Seasonal Star",
+      "description": "Complete a seasonal eating challenge",
+      "category": "special",
+      "difficulty": "gold",
+      "points": 200,
+      "icon": "🍂",
+      "requirements": {
+        "seasonal_challenge": true
+      },
+      "unlockMessage": "Season greetings! You've embraced nature's bounty at its peak."
+    },
+    {
+      "id": "mindful_eater",
+      "name": "Mindful Eater",
+      "description": "Practice mindful eating for 10 meals",
+      "category": "learning",
+      "difficulty": "silver",
+      "points": 85,
+      "icon": "🧘‍♀️",
+      "requirements": {
+        "mindful_meals": 10
+      },
+      "unlockMessage": "Present moment awareness! You're transforming your relationship with food."
+    },
+    {
+      "id": "fiber_champion",
+      "name": "Fiber Champion",
+      "description": "Reach fiber goals for 21 days",
+      "category": "nutrition",
+      "difficulty": "gold",
+      "points": 160,
+      "icon": "🌾",
+      "requirements": {
+        "fiber_goal_days": 21
+      },
+      "unlockMessage": "Gut health champion! Your digestive system is thanking you."
+    },
+    {
+      "id": "photographer",
+      "name": "Food Photographer",
+      "description": "Take photos of 50 meals",
+      "category": "tracking",
+      "difficulty": "bronze",
+      "points": 45,
+      "icon": "📸",
+      "requirements": {
+        "meal_photos": 50
+      },
+      "unlockMessage": "Picture perfect! Visual tracking enhances awareness and memory."
+    },
+    {
+      "id": "legend_365",
+      "name": "Legend",
+      "description": "Maintain a 365-day logging streak",
+      "category": "streaks",
+      "difficulty": "diamond",
+      "points": 1000,
+      "icon": "👑",
+      "requirements": {
+        "consecutive_days": 365
+      },
+      "unlockMessage": "LEGENDARY STATUS ACHIEVED! You are the embodiment of dedication and consistency. A true inspiration to all!"
+    }
+  ],
+  "achievements": {
+    "bronze": {
+      "color": "#CD7F32",
+      "points_range": "10-80",
+      "description": "Getting started achievements"
+    },
+    "silver": {
+      "color": "#C0C0C0", 
+      "points_range": "75-150",
+      "description": "Intermediate accomplishments"
+    },
+    "gold": {
+      "color": "#FFD700",
+      "points_range": "160-300",
+      "description": "Advanced achievements"
+    },
+    "diamond": {
+      "color": "#B9F2FF",
+      "points_range": "500+",
+      "description": "Elite legendary status"
+    }
+  },
+  "progressLevels": {
+    "level_1": { "name": "Beginner", "points_required": 0, "perks": ["Basic food logging"] },
+    "level_2": { "name": "Novice", "points_required": 100, "perks": ["Recipe suggestions"] },
+    "level_3": { "name": "Apprentice", "points_required": 250, "perks": ["Meal planning"] },
+    "level_4": { "name": "Intermediate", "points_required": 500, "perks": ["Advanced analytics"] },
+    "level_5": { "name": "Advanced", "points_required": 1000, "perks": ["Custom challenges"] },
+    "level_6": { "name": "Expert", "points_required": 1750, "perks": ["Mentorship opportunities"] },
+    "level_7": { "name": "Master", "points_required": 2750, "perks": ["Premium features"] },
+    "level_8": { "name": "Guru", "points_required": 4000, "perks": ["Beta feature access"] },
+    "level_9": { "name": "Sage", "points_required": 6000, "perks": ["Community leadership"] },
+    "level_10": { "name": "Legend", "points_required": 10000, "perks": ["Lifetime recognition", "Special badge", "Hall of Fame"] }
+  }
+}

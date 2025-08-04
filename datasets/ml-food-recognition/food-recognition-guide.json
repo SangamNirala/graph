@@ -1,0 +1,310 @@
+{
+  "datasetSources": {
+    "food101": {
+      "name": "Food-101 Dataset",
+      "description": "101 food categories with 1,000 images each",
+      "total_images": 101000,
+      "categories": 101,
+      "download_size": "5.0 GB",
+      "license": "Research/Educational use",
+      "download_command": "kaggle datasets download -d kmader/food41",
+      "paper": "https://www.vision.ee.ethz.ch/datasets_extra/food-101/",
+      "accuracy_benchmark": "56.40% top-1 accuracy (ResNet-101)",
+      "categories_sample": [
+        "apple_pie", "baby_back_ribs", "baklava", "beef_carpaccio", "beef_tartare",
+        "beet_salad", "beignets", "bibimbap", "bread_pudding", "breakfast_burrito",
+        "bruschetta", "caesar_salad", "cannoli", "caprese_salad", "carrot_cake"
+      ]
+    },
+    "recipe1m": {
+      "name": "Recipe1M+ Dataset", 
+      "description": "Over 1 million recipes with images",
+      "total_recipes": 1000000,
+      "with_images": 720000,
+      "download_size": "1.2 GB (metadata)",
+      "license": "Academic use",
+      "features": ["Ingredients", "Instructions", "Images", "Nutrition"],
+      "download_url": "http://pic2recipe.csail.mit.edu/"
+    },
+    "usda_food_images": {
+      "name": "USDA Food Images",
+      "description": "Real food images with precise nutrition data",
+      "total_images": 25000,
+      "verified_nutrition": true,
+      "download_size": "2.8 GB",
+      "license": "Public domain",
+      "api_access": "Via USDA FoodData Central API",
+      "unique_features": ["Portion size accuracy", "Nutrition verified", "Multiple angles"]
+    },
+    "open_food_facts_images": {
+      "name": "Open Food Facts Images",
+      "description": "Real product images with barcode data",
+      "total_images": 3000000,
+      "products": 1500000,
+      "download_size": "Variable (API-based)",
+      "license": "Open Database License",
+      "api_endpoint": "https://world.openfoodfacts.org/api/v0/",
+      "features": ["Barcode scanning", "Nutrition facts", "Ingredient lists"]
+    },
+    "food500": {
+      "name": "Food-500 Dataset",
+      "description": "Extended food recognition with 500 categories",
+      "total_images": 500000,
+      "categories": 500,
+      "download_size": "15 GB",
+      "license": "Research use",
+      "improvements": "Better coverage of international cuisines"
+    }
+  },
+  "implementationGuide": {
+    "phase1_setup": {
+      "title": "Basic Food Recognition Setup",
+      "duration": "Week 1-2",
+      "steps": [
+        {
+          "step": 1,
+          "task": "Download Food-101 dataset",
+          "command": "kaggle datasets download -d kmader/food41",
+          "notes": "Requires Kaggle account and API setup"
+        },
+        {
+          "step": 2,
+          "task": "Set up basic image classification model",
+          "model": "Pre-trained ResNet-50",
+          "framework": "TensorFlow/Keras",
+          "accuracy_target": "70%+"
+        },
+        {
+          "step": 3,
+          "task": "Implement camera capture integration",
+          "technologies": ["Browser Camera API", "File upload", "Image preprocessing"],
+          "features": ["Real-time capture", "Gallery upload", "Multiple formats"]
+        },
+        {
+          "step": 4,
+          "task": "Create confidence scoring system",
+          "thresholds": {
+            "high_confidence": 0.85,
+            "medium_confidence": 0.65,
+            "low_confidence": 0.45
+          },
+          "fallback": "Manual food search when confidence < 0.45"
+        }
+      ]
+    },
+    "phase2_enhancement": {
+      "title": "Advanced Recognition Features",
+      "duration": "Month 2",
+      "steps": [
+        {
+          "step": 1,
+          "task": "Multi-food detection",
+          "description": "Detect multiple food items in single image",
+          "techniques": ["Object detection", "Image segmentation", "YOLO algorithm"],
+          "complexity": "High"
+        },
+        {
+          "step": 2,
+          "task": "Portion size estimation",
+          "methods": [
+            "Reference object detection (coins, hands, utensils)",
+            "Depth estimation from single image",
+            "User calibration system"
+          ],
+          "accuracy_goal": "±20% portion accuracy"
+        },
+        {
+          "step": 3,
+          "task": "Cooking method recognition",
+          "categories": ["Raw", "Grilled", "Fried", "Baked", "Steamed", "Boiled"],
+          "impact": "Affects calorie and nutrient calculations",
+          "model": "Secondary classification after food identification"
+        }
+      ]
+    },
+    "phase3_optimization": {
+      "title": "Production Optimization",
+      "duration": "Month 3-4",
+      "steps": [
+        {
+          "step": 1,
+          "task": "Model compression for mobile",
+          "techniques": ["TensorFlow Lite", "Model quantization", "Edge optimization"],
+          "target_size": "< 50MB model file"
+        },
+        {
+          "step": 2,
+          "task": "Offline capabilities",
+          "approach": "Core food recognition works without internet",
+          "cached_data": "Top 100 most common foods",
+          "sync": "Upload for analysis when connection available"
+        },
+        {
+          "step": 3,
+          "task": "User feedback integration",
+          "features": [
+            "Correction system for wrong predictions",
+            "Custom food additions",
+            "Learning from user corrections"
+          ],
+          "improvement": "Model accuracy improves with usage"
+        }
+      ]
+    }
+  },
+  "technicalRequirements": {
+    "minimum_hardware": {
+      "ram": "4GB",
+      "storage": "8GB for datasets",
+      "gpu": "Optional but recommended for training"
+    },
+    "software_stack": {
+      "python_version": "3.8+",
+      "frameworks": ["TensorFlow 2.x", "OpenCV", "PIL/Pillow"],
+      "libraries": ["NumPy", "Pandas", "Scikit-learn", "Matplotlib"],
+      "deployment": ["FastAPI", "TensorFlow Serving", "Docker"]
+    },
+    "model_specifications": {
+      "input_size": "224x224 pixels",
+      "color_space": "RGB",
+      "preprocessing": [
+        "Resize and center crop",
+        "Normalization (ImageNet stats)",
+        "Data augmentation for training"
+      ],
+      "output": {
+        "food_class": "Predicted food category",
+        "confidence": "Probability score (0-1)",
+        "alternatives": "Top 5 predictions with confidence"
+      }
+    }
+  },
+  "performanceMetrics": {
+    "accuracy_targets": {
+      "food_identification": {
+        "top1_accuracy": "75%+",
+        "top5_accuracy": "90%+",
+        "confidence_correlation": "High confidence predictions should be >95% accurate"
+      },
+      "portion_estimation": {
+        "volume_accuracy": "±25%",
+        "weight_accuracy": "±20%",
+        "calorie_accuracy": "±30%"
+      },
+      "speed_requirements": {
+        "inference_time": "< 2 seconds",
+        "image_processing": "< 1 second",
+        "total_response": "< 3 seconds"
+      }
+    },
+    "user_experience": {
+      "success_rate": "85% of photos correctly identified",
+      "user_satisfaction": "4.0+ stars for food recognition feature",
+      "retry_rate": "< 15% of users need to retake photos"
+    }
+  },
+  "trainingPipeline": {
+    "data_preparation": {
+      "steps": [
+        "Download and organize datasets",
+        "Clean and validate images",
+        "Create train/validation/test splits (70/15/15)",
+        "Implement data augmentation"
+      ],
+      "augmentation_techniques": [
+        "Random rotation (±15 degrees)",
+        "Brightness adjustment (±20%)",
+        "Color saturation variation",
+        "Random cropping and flipping"
+      ]
+    },
+    "model_training": {
+      "approach": "Transfer learning from ImageNet",
+      "base_models": ["ResNet-50", "EfficientNet-B0", "MobileNet-V3"],
+      "fine_tuning": "Unfreeze last 2-3 layers",
+      "optimization": {
+        "learning_rate": "0.001 with decay",
+        "batch_size": "32 (adjust based on GPU memory)",
+        "epochs": "50-100 with early stopping",
+        "loss_function": "Categorical crossentropy"
+      }
+    },
+    "validation_testing": {
+      "cross_validation": "5-fold validation",
+      "test_sets": [
+        "Hold-out test set from training data",
+        "Real user photos (different from training)",
+        "Edge cases (blurry, partial, unusual angles)"
+      ],
+      "metrics": ["Accuracy", "Precision", "Recall", "F1-score", "Confusion matrix"]
+    }
+  },
+  "integrationChecklist": [
+    {
+      "task": "Camera API integration",
+      "status": "Required",
+      "complexity": "Medium",
+      "estimated_time": "1-2 days"
+    },
+    {
+      "task": "Image preprocessing pipeline", 
+      "status": "Required",
+      "complexity": "Medium",
+      "estimated_time": "2-3 days"
+    },
+    {
+      "task": "Model serving endpoint",
+      "status": "Required", 
+      "complexity": "High",
+      "estimated_time": "3-5 days"
+    },
+    {
+      "task": "Nutrition database lookup",
+      "status": "Required",
+      "complexity": "Low",
+      "estimated_time": "1 day"
+    },
+    {
+      "task": "User feedback system",
+      "status": "Nice to have",
+      "complexity": "Medium",
+      "estimated_time": "2-3 days"
+    },
+    {
+      "task": "Offline model caching",
+      "status": "Nice to have",
+      "complexity": "High",
+      "estimated_time": "5-7 days"
+    }
+  ],
+  "troubleshooting": {
+    "common_issues": [
+      {
+        "problem": "Low accuracy on real user photos",
+        "solution": "Add more diverse training data, improve data augmentation",
+        "prevention": "Test with real photos during development"
+      },
+      {
+        "problem": "Slow inference time",
+        "solution": "Model optimization, hardware acceleration, batch processing",
+        "prevention": "Set performance targets early"
+      },
+      {
+        "problem": "High memory usage",
+        "solution": "Model quantization, smaller input size, efficient preprocessing",
+        "prevention": "Monitor memory usage during development"
+      },
+      {
+        "problem": "Poor performance on specific food types",
+        "solution": "Collect more examples of problematic foods, class balancing",
+        "prevention": "Analyze dataset distribution before training"
+      }
+    ],
+    "debugging_tools": [
+      "Confusion matrix analysis",
+      "Grad-CAM for visual explanations",
+      "Error analysis by food category",
+      "Performance profiling tools"
+    ]
+  }
+}

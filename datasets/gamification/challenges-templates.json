@@ -1,0 +1,394 @@
+{
+  "challengeTypes": {
+    "daily": {
+      "name": "Daily Challenges",
+      "duration": 1,
+      "difficulty": "easy",
+      "frequency": "every_day",
+      "description": "Simple daily habits to build momentum"
+    },
+    "weekly": {
+      "name": "Weekly Challenges", 
+      "duration": 7,
+      "difficulty": "medium",
+      "frequency": "weekly",
+      "description": "Week-long focused improvements"
+    },
+    "monthly": {
+      "name": "Monthly Challenges",
+      "duration": 30,
+      "difficulty": "hard",
+      "frequency": "monthly", 
+      "description": "Intensive month-long transformations"
+    },
+    "seasonal": {
+      "name": "Seasonal Challenges",
+      "duration": 90,
+      "difficulty": "expert",
+      "frequency": "quarterly",
+      "description": "Seasonal eating and health focus"
+    }
+  },
+  "dailyChallenges": [
+    {
+      "id": "hydration_boost",
+      "title": "Hydration Boost",
+      "description": "Drink an extra glass of water before each meal",
+      "category": "hydration",
+      "points": 15,
+      "icon": "💧",
+      "difficulty": "easy",
+      "instructions": [
+        "Drink 8oz of water 15 minutes before breakfast",
+        "Drink 8oz of water 15 minutes before lunch", 
+        "Drink 8oz of water 15 minutes before dinner"
+      ],
+      "tips": [
+        "Set reminders on your phone",
+        "Add lemon or cucumber for flavor",
+        "Use a marked water bottle to track intake"
+      ],
+      "health_benefits": [
+        "Improved digestion",
+        "Better portion control",
+        "Enhanced hydration status"
+      ]
+    },
+    {
+      "id": "veggie_first",
+      "title": "Veggies First",
+      "description": "Start each meal with a serving of vegetables",
+      "category": "nutrition",
+      "points": 20,
+      "icon": "🥬",
+      "difficulty": "easy",
+      "instructions": [
+        "Have a salad or raw vegetables as an appetizer",
+        "Include vegetables in every meal",
+        "Aim for different colors throughout the day"
+      ],
+      "tips": [
+        "Pre-cut vegetables for convenience",
+        "Try new vegetables to avoid boredom",
+        "Season with herbs and spices for flavor"
+      ],
+      "health_benefits": [
+        "Increased fiber intake",
+        "Better blood sugar control",
+        "Enhanced nutrient density"
+      ]
+    },
+    {
+      "id": "mindful_bites",
+      "title": "20 Mindful Bites",
+      "description": "Chew each bite at least 20 times",
+      "category": "mindfulness",
+      "points": 25,
+      "icon": "🧘‍♀️",
+      "difficulty": "medium",
+      "instructions": [
+        "Put your fork down between bites",
+        "Count your chews for awareness",
+        "Focus on flavors and textures"
+      ],
+      "tips": [
+        "Eat without distractions (TV, phone)",
+        "Take smaller bites",
+        "Appreciate the food's journey to your plate"
+      ],
+      "health_benefits": [
+        "Better digestion",
+        "Improved satiety signals",
+        "Reduced overeating"
+      ]
+    },
+    {
+      "id": "protein_power",
+      "title": "Protein Power Hour",
+      "description": "Include protein in every meal and snack today",
+      "category": "nutrition",
+      "points": 18,
+      "icon": "💪",
+      "difficulty": "easy",
+      "instructions": [
+        "Add protein to breakfast (eggs, Greek yogurt, protein powder)",
+        "Include lean protein in lunch and dinner",
+        "Choose protein-rich snacks (nuts, cheese, jerky)"
+      ],
+      "tips": [
+        "Plan protein sources in advance",
+        "Try plant-based proteins for variety",
+        "Aim for 20-30g protein per meal"
+      ],
+      "health_benefits": [
+        "Stable blood sugar",
+        "Increased satiety",
+        "Muscle maintenance"
+      ]
+    }
+  ],
+  "weeklyChallenges": [
+    {
+      "id": "rainbow_week",
+      "title": "Eat the Rainbow Week",
+      "description": "Eat fruits and vegetables from every color group each day for 7 days",
+      "category": "nutrition",
+      "duration": 7,
+      "points": 100,
+      "icon": "🌈",
+      "difficulty": "medium",
+      "color_groups": {
+        "red": ["tomatoes", "red peppers", "strawberries", "apples"],
+        "orange": ["carrots", "sweet potatoes", "oranges", "pumpkin"],
+        "yellow": ["corn", "yellow peppers", "bananas", "lemons"],
+        "green": ["spinach", "broccoli", "avocado", "green beans"],
+        "blue_purple": ["blueberries", "eggplant", "purple cabbage", "grapes"],
+        "white": ["cauliflower", "onions", "garlic", "mushrooms"]
+      },
+      "daily_goal": "Include at least one food from each color group",
+      "tips": [
+        "Shop for colorful produce at the start of the week",
+        "Try a new colorful food each day",
+        "Take photos of your colorful meals"
+      ],
+      "health_benefits": [
+        "Diverse phytonutrient intake",
+        "Enhanced antioxidant protection", 
+        "Improved overall nutrition"
+      ]
+    },
+    {
+      "id": "sugar_free_week",
+      "title": "Natural Sweetness Week",
+      "description": "Avoid added sugars and artificial sweeteners for one week",
+      "category": "nutrition",
+      "duration": 7,
+      "points": 150,
+      "icon": "🚫🍬",
+      "difficulty": "hard",
+      "allowed_sweeteners": [
+        "Fresh fruits",
+        "Dates (in moderation)",
+        "Pure stevia leaf",
+        "Small amounts of honey or maple syrup"
+      ],
+      "foods_to_avoid": [
+        "Sodas and sugary drinks",
+        "Candy and desserts",
+        "Processed foods with added sugar",
+        "Artificial sweeteners"
+      ],
+      "tips": [
+        "Read ingredient labels carefully",
+        "Prepare sugar-free snacks in advance",
+        "Find natural alternatives for sweet cravings"
+      ],
+      "health_benefits": [
+        "Stable energy levels",
+        "Reduced sugar cravings",
+        "Better taste sensitivity"
+      ]
+    },
+    {
+      "id": "meal_prep_master",
+      "title": "Meal Prep Master Week",
+      "description": "Prepare all your meals and snacks in advance for the entire week",
+      "category": "planning",
+      "duration": 7,
+      "points": 120,
+      "icon": "📦",
+      "difficulty": "medium",
+      "requirements": [
+        "Plan all meals for the week",
+        "Batch cook proteins and grains",
+        "Pre-cut vegetables and fruits",
+        "Portion snacks into containers"
+      ],
+      "daily_checklist": [
+        "All meals prepared or readily available",
+        "Healthy snacks portioned and accessible",
+        "No last-minute food decisions"
+      ],
+      "tips": [
+        "Invest in good quality containers",
+        "Cook versatile ingredients that mix and match",
+        "Prep on Sunday for the week ahead"
+      ],
+      "health_benefits": [
+        "Consistent healthy eating",
+        "Time and money savings",
+        "Reduced food waste"
+      ]
+    }
+  ],
+  "monthlyChallenges": [
+    {
+      "id": "whole30_inspired",
+      "title": "Clean Eating Reset",
+      "description": "30 days of whole, unprocessed foods",
+      "category": "nutrition",
+      "duration": 30,
+      "points": 300,
+      "icon": "🥗",
+      "difficulty": "expert",
+      "allowed_foods": [
+        "Fresh vegetables and fruits",
+        "Lean meats and fish",
+        "Eggs and nuts",
+        "Healthy fats (avocado, olive oil)",
+        "Herbs and spices"
+      ],
+      "eliminated_foods": [
+        "Processed and packaged foods",
+        "Added sugars and artificial sweeteners",
+        "Grains and legumes",
+        "Dairy products",
+        "Alcohol"
+      ],
+      "weekly_milestones": {
+        "week_1": "Adjustment period - focus on meal planning",
+        "week_2": "Energy levels stabilizing - try new recipes",
+        "week_3": "Habits forming - notice improvements",
+        "week_4": "Feeling great - celebrate progress"
+      },
+      "support_resources": [
+        "Daily meal ideas and recipes",
+        "Shopping lists for each week",
+        "Tips for dining out",
+        "Community support forum"
+      ]
+    },
+    {
+      "id": "plant_powered_month",
+      "title": "Plant-Powered Month",
+      "description": "Eat predominantly plant-based meals for 30 days",
+      "category": "nutrition",
+      "duration": 30,
+      "points": 250,
+      "icon": "🌱",
+      "difficulty": "hard",
+      "goals": [
+        "80% of meals plant-based",
+        "Try 10 new plant proteins",
+        "Learn 5 new cooking techniques",
+        "Reduce environmental impact"
+      ],
+      "plant_proteins": [
+        "Lentils and legumes",
+        "Quinoa and ancient grains",
+        "Nuts and seeds",
+        "Tofu and tempeh",
+        "Nutritional yeast"
+      ],
+      "weekly_themes": {
+        "week_1": "Breakfast transformations",
+        "week_2": "Lunch innovations", 
+        "week_3": "Dinner masterpieces",
+        "week_4": "Snack adventures"
+      },
+      "health_benefits": [
+        "Increased fiber intake",
+        "Environmental sustainability",
+        "Diverse nutrient profile",
+        "Potential weight management"
+      ]
+    }
+  ],
+  "seasonalChallenges": [
+    {
+      "id": "spring_detox",
+      "title": "Spring Renewal Challenge",
+      "description": "90-day seasonal eating and lifestyle reset",
+      "category": "seasonal",
+      "duration": 90,
+      "points": 500,
+      "icon": "🌸",
+      "difficulty": "expert",
+      "seasonal_focus": {
+        "foods": ["Spring greens", "Asparagus", "Artichokes", "Fresh herbs"],
+        "activities": ["Outdoor walking", "Gardening", "Spring cleaning"],
+        "mindset": ["Renewal", "Growth", "Fresh starts"]
+      },
+      "monthly_phases": {
+        "month_1": {
+          "title": "Cleanse and Reset",
+          "focus": "Eliminate processed foods, increase vegetables",
+          "goals": ["Detox from winter habits", "Boost energy levels"]
+        },
+        "month_2": {
+          "title": "Build and Strengthen",
+          "focus": "Add new healthy habits, increase physical activity",
+          "goals": ["Establish routines", "Improve fitness"]
+        },
+        "month_3": {
+          "title": "Maintain and Thrive",
+          "focus": "Sustain changes, optimize health",
+          "goals": ["Long-term lifestyle", "Peak wellness"]
+        }
+      }
+    }
+  ],
+  "communityEvents": [
+    {
+      "id": "global_nutrition_day",
+      "title": "Global Nutrition Day",
+      "description": "Worldwide community challenge for nutrition awareness",
+      "type": "special_event",
+      "duration": 1,
+      "points": 50,
+      "icon": "🌍",
+      "activities": [
+        "Share a healthy recipe",
+        "Post nutrition tip",
+        "Try a new healthy food",
+        "Encourage a friend"
+      ],
+      "community_goals": {
+        "recipes_shared": 10000,
+        "tips_posted": 5000,
+        "new_foods_tried": 25000,
+        "encouragements": 50000
+      }
+    },
+    {
+      "id": "harvest_festival",
+      "title": "Autumn Harvest Festival",
+      "description": "Celebrate seasonal produce and thanksgiving",
+      "type": "seasonal_event",
+      "duration": 7,
+      "points": 100,
+      "icon": "🍂",
+      "activities": [
+        "Cook with seasonal vegetables",
+        "Visit a farmers market",
+        "Practice gratitude for food",
+        "Share harvest-themed meals"
+      ],
+      "seasonal_foods": [
+        "Pumpkins and squashes",
+        "Apples and pears",
+        "Sweet potatoes",
+        "Cranberries",
+        "Brussels sprouts"
+      ]
+    }
+  ],
+  "challengeRewards": {
+    "points": {
+      "daily": "10-30 points",
+      "weekly": "50-200 points", 
+      "monthly": "200-500 points",
+      "seasonal": "400-1000 points"
+    },
+    "badges": {
+      "completion": "Challenge completion badges",
+      "streak": "Consecutive challenge badges",
+      "variety": "Different challenge type badges"
+    },
+    "unlocks": {
+      "recipes": "New recipe collections",
+      "features": "Advanced app features",
+      "content": "Educational content and tips"
+    }
+  }
+}
