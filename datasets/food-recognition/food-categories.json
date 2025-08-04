@@ -1,0 +1,212 @@
+{
+  "foodCategories": {
+    "fruits": {
+      "id": "fruits",
+      "name": "Fruits and Fruit Juices",
+      "description": "Fresh, dried, and processed fruits",
+      "color": "#FF6B6B",
+      "icon": "🍎",
+      "commonItems": [
+        "apple", "banana", "orange", "strawberry", "grape", "pineapple",
+        "mango", "kiwi", "peach", "pear", "cherry", "watermelon"
+      ],
+      "recognitionKeywords": [
+        "fresh fruit", "citrus", "berry", "tropical fruit", "stone fruit",
+        "melon", "dried fruit", "fruit salad", "juice"
+      ],
+      "nutritionHighlights": ["Vitamin C", "Fiber", "Antioxidants", "Natural Sugars"]
+    },
+    "vegetables": {
+      "id": "vegetables", 
+      "name": "Vegetables and Vegetable Products",
+      "description": "Fresh, cooked, and processed vegetables",
+      "color": "#4ECDC4",
+      "icon": "🥬",
+      "commonItems": [
+        "broccoli", "spinach", "carrot", "tomato", "onion", "pepper",
+        "cucumber", "lettuce", "potato", "celery", "mushroom", "corn"
+      ],
+      "recognitionKeywords": [
+        "leafy greens", "root vegetables", "cruciferous", "nightshades",
+        "salad", "stir fry", "roasted vegetables", "vegetable soup"
+      ],
+      "nutritionHighlights": ["Vitamins A&K", "Folate", "Potassium", "Fiber"]
+    },
+    "proteins": {
+      "id": "proteins",
+      "name": "Protein Foods",
+      "description": "Meat, poultry, fish, eggs, and plant proteins",
+      "color": "#FF8B94",
+      "icon": "🍗",
+      "commonItems": [
+        "chicken breast", "salmon", "beef", "pork", "turkey", "eggs",
+        "tofu", "beans", "lentils", "nuts", "quinoa", "greek yogurt"
+      ],
+      "recognitionKeywords": [
+        "grilled chicken", "baked fish", "lean meat", "legumes", "nuts",
+        "dairy", "plant protein", "seafood", "poultry"
+      ],
+      "nutritionHighlights": ["Complete Proteins", "Iron", "B-Vitamins", "Healthy Fats"]
+    },
+    "grains": {
+      "id": "grains",
+      "name": "Cereal Grains and Pasta", 
+      "description": "Whole grains, refined grains, and pasta",
+      "color": "#F7DC6F",
+      "icon": "🌾",
+      "commonItems": [
+        "brown rice", "white rice", "quinoa", "oats", "bread", "pasta",
+        "barley", "bulgur", "couscous", "crackers", "cereal", "tortilla"
+      ],
+      "recognitionKeywords": [
+        "whole grain", "refined grain", "pasta dish", "rice bowl",
+        "breakfast cereal", "bread", "noodles", "ancient grains"
+      ],
+      "nutritionHighlights": ["Complex Carbs", "B-Vitamins", "Fiber", "Iron"]
+    },
+    "dairy": {
+      "id": "dairy",
+      "name": "Dairy and Egg Products",
+      "description": "Milk, cheese, yogurt, and egg products",
+      "color": "#AED6F1",
+      "icon": "🥛",
+      "commonItems": [
+        "milk", "cheese", "yogurt", "eggs", "butter", "cream",
+        "cottage cheese", "mozzarella", "cheddar", "ice cream"
+      ],
+      "recognitionKeywords": [
+        "dairy product", "milk based", "cheese", "yogurt", "eggs",
+        "calcium rich", "fermented dairy", "ice cream"
+      ],
+      "nutritionHighlights": ["Calcium", "Protein", "Vitamin D", "Probiotics"]
+    },
+    "fats_oils": {
+      "id": "fats_oils",
+      "name": "Fats and Oils",
+      "description": "Cooking oils, nuts, seeds, and healthy fats",
+      "color": "#F8C471",
+      "icon": "🥑",
+      "commonItems": [
+        "olive oil", "avocado", "nuts", "seeds", "coconut oil", "butter",
+        "almonds", "walnuts", "chia seeds", "flaxseed", "peanut butter"
+      ],
+      "recognitionKeywords": [
+        "healthy fats", "cooking oil", "nuts", "seeds", "avocado",
+        "nut butter", "omega-3", "monounsaturated"
+      ],
+      "nutritionHighlights": ["Healthy Fats", "Vitamin E", "Omega-3", "Magnesium"]
+    },
+    "beverages": {
+      "id": "beverages",
+      "name": "Beverages",
+      "description": "Water, juices, coffee, tea, and other drinks",
+      "color": "#85C1E9",
+      "icon": "🥤",
+      "commonItems": [
+        "water", "coffee", "tea", "juice", "smoothie", "soda",
+        "energy drink", "sports drink", "milk", "wine", "beer"
+      ],
+      "recognitionKeywords": [
+        "drink", "beverage", "liquid", "hydration", "caffeinated",
+        "fruit juice", "smoothie", "alcoholic", "non-alcoholic"
+      ],
+      "nutritionHighlights": ["Hydration", "Antioxidants", "Caffeine", "Electrolytes"]
+    },
+    "snacks_sweets": {
+      "id": "snacks_sweets",
+      "name": "Snacks and Sweets", 
+      "description": "Processed snacks, desserts, and confections",
+      "color": "#F1948A",
+      "icon": "🍰",
+      "commonItems": [
+        "chips", "cookies", "cake", "candy", "chocolate", "ice cream",
+        "crackers", "popcorn", "granola bar", "muffin", "donut"
+      ],
+      "recognitionKeywords": [
+        "dessert", "sweet treat", "processed snack", "baked goods",
+        "confection", "sugary", "high calorie", "comfort food"
+      ],
+      "nutritionHighlights": ["Quick Energy", "Added Sugars", "Refined Carbs", "Calories"]
+    }
+  },
+  "foodRecognitionModel": {
+    "confidence_thresholds": {
+      "high_confidence": 0.85,
+      "medium_confidence": 0.65,
+      "low_confidence": 0.45
+    },
+    "fallback_strategies": [
+      "prompt_user_confirmation",
+      "suggest_similar_items", 
+      "manual_food_search",
+      "barcode_scanning"
+    ],
+    "common_cooking_methods": [
+      "raw", "grilled", "baked", "fried", "steamed", "boiled",
+      "roasted", "sautéed", "poached", "braised", "smoked"
+    ],
+    "portion_estimation": {
+      "reference_objects": [
+        "deck of cards (3oz protein)",
+        "tennis ball (1 cup)",
+        "thumb tip (1 tsp)",
+        "palm size (3-4oz)",
+        "cupped hand (1-2oz nuts)"
+      ],
+      "standard_portions": {
+        "fruits": "1 medium piece or 1 cup chopped",
+        "vegetables": "1 cup raw or 1/2 cup cooked", 
+        "grains": "1/2 cup cooked or 1 slice bread",
+        "protein": "3-4 oz cooked or 1 egg",
+        "dairy": "1 cup milk/yogurt or 1.5 oz cheese",
+        "fats": "1 tbsp oil or 1/4 cup nuts"
+      }
+    }
+  },
+  "nutritionTargets": {
+    "macronutrients": {
+      "carbohydrates": {
+        "percentage": "45-65%",
+        "grams_per_kg": "5-7g/kg body weight",
+        "primary_sources": ["grains", "fruits", "vegetables"]
+      },
+      "proteins": {
+        "percentage": "10-35%", 
+        "grams_per_kg": "0.8-1.2g/kg body weight",
+        "primary_sources": ["proteins", "dairy", "grains"]
+      },
+      "fats": {
+        "percentage": "20-35%",
+        "grams_per_kg": "0.8-1.2g/kg body weight",
+        "primary_sources": ["fats_oils", "proteins", "dairy"]
+      }
+    },
+    "daily_recommendations": {
+      "fruits": "2-4 servings",
+      "vegetables": "3-5 servings",
+      "grains": "6-11 servings",
+      "proteins": "2-3 servings", 
+      "dairy": "2-3 servings",
+      "fats": "use sparingly",
+      "water": "8-10 glasses"
+    }
+  },
+  "allergens_dietary": {
+    "common_allergens": [
+      "milk", "eggs", "fish", "shellfish", "tree nuts", 
+      "peanuts", "wheat", "soybeans", "sesame"
+    ],
+    "dietary_preferences": [
+      "vegetarian", "vegan", "pescatarian", "keto", "paleo",
+      "gluten-free", "dairy-free", "low-sodium", "diabetic-friendly"
+    ],
+    "restriction_mapping": {
+      "vegan": ["dairy", "eggs", "meat", "fish", "honey"],
+      "vegetarian": ["meat", "fish", "poultry"],
+      "gluten-free": ["wheat", "barley", "rye", "oats"],
+      "dairy-free": ["milk", "cheese", "butter", "yogurt"],
+      "keto": ["high-carb foods", "sugar", "grains", "most fruits"],
+      "paleo": ["grains", "legumes", "dairy", "processed foods"]
+    }
+  }
+}

@@ -1,0 +1,200 @@
+{
+  "bmr_formulas": {
+    "harris_benedict": {
+      "name": "Harris-Benedict Equation (Revised)",
+      "year": "1990",
+      "accuracy": "±5%",
+      "formulas": {
+        "male": {
+          "formula": "66.5 + (13.75 × weight_kg) + (5.003 × height_cm) - (6.75 × age_years)",
+          "description": "Most widely used BMR calculation for men"
+        },
+        "female": {
+          "formula": "655.1 + (9.563 × weight_kg) + (1.850 × height_cm) - (4.676 × age_years)",
+          "description": "Most widely used BMR calculation for women"
+        }
+      }
+    },
+    "mifflin_st_jeor": {
+      "name": "Mifflin-St Jeor Equation",
+      "year": "1990", 
+      "accuracy": "±10%",
+      "recommended": true,
+      "formulas": {
+        "male": {
+          "formula": "(10 × weight_kg) + (6.25 × height_cm) - (5 × age_years) + 5",
+          "description": "More accurate for modern populations"
+        },
+        "female": {
+          "formula": "(10 × weight_kg) + (6.25 × height_cm) - (5 × age_years) - 161",
+          "description": "More accurate for modern populations"
+        }
+      }
+    },
+    "katch_mcardle": {
+      "name": "Katch-McArdle Formula",
+      "year": "1996",
+      "accuracy": "±3%",
+      "requirements": "Body fat percentage needed",
+      "formula": "370 + (21.6 × lean_body_mass_kg)",
+      "description": "Most accurate when body composition is known"
+    }
+  },
+  "activity_multipliers": {
+    "sedentary": {
+      "value": 1.2,
+      "description": "Little or no exercise, desk job",
+      "examples": ["Office worker", "Student", "Retired with minimal activity"]
+    },
+    "lightly_active": {
+      "value": 1.375,
+      "description": "Light exercise 1-3 days per week",
+      "examples": ["Walking", "Light yoga", "Recreational activities"]
+    },
+    "moderately_active": {
+      "value": 1.55,
+      "description": "Moderate exercise 3-5 days per week",
+      "examples": ["Gym workouts", "Sports", "Active job"]
+    },
+    "very_active": {
+      "value": 1.725,
+      "description": "Hard exercise 6-7 days per week",
+      "examples": ["Daily training", "Physical job", "Competitive sports"]
+    },
+    "extremely_active": {
+      "value": 1.9,
+      "description": "Very hard exercise, physical job + training",
+      "examples": ["Professional athlete", "Manual laborer who trains"]
+    }
+  },
+  "body_composition": {
+    "body_fat_categories": {
+      "male": {
+        "essential_fat": {"min": 2, "max": 5, "description": "Required for basic physiological functions"},
+        "athlete": {"min": 6, "max": 13, "description": "Typical for competitive athletes"},
+        "fitness": {"min": 14, "max": 17, "description": "Fit, healthy appearance"},
+        "average": {"min": 18, "max": 24, "description": "Average for general population"},
+        "obese": {"min": 25, "max": 100, "description": "Above healthy levels"}
+      },
+      "female": {
+        "essential_fat": {"min": 10, "max": 13, "description": "Required for basic physiological functions"},
+        "athlete": {"min": 14, "max": 20, "description": "Typical for competitive athletes"},
+        "fitness": {"min": 21, "max": 24, "description": "Fit, healthy appearance"},
+        "average": {"min": 25, "max": 31, "description": "Average for general population"},
+        "obese": {"min": 32, "max": 100, "description": "Above healthy levels"}
+      }
+    },
+    "bmi_categories": {
+      "underweight": {"min": 0, "max": 18.4, "color": "#3498DB"},
+      "normal": {"min": 18.5, "max": 24.9, "color": "#27AE60"},
+      "overweight": {"min": 25, "max": 29.9, "color": "#F39C12"},
+      "obese_1": {"min": 30, "max": 34.9, "color": "#E67E22"},
+      "obese_2": {"min": 35, "max": 39.9, "color": "#E74C3C"},
+      "obese_3": {"min": 40, "max": 100, "color": "#8E44AD"}
+    }
+  },
+  "goal_calculations": {
+    "weight_loss": {
+      "safe_rate": "0.5-2 pounds per week",
+      "calorie_deficit": {
+        "mild": 250,
+        "moderate": 500,
+        "aggressive": 750,
+        "maximum": 1000
+      },
+      "macros": {
+        "protein": "25-35%",
+        "carbs": "35-45%", 
+        "fat": "20-35%"
+      }
+    },
+    "weight_gain": {
+      "safe_rate": "0.5-1 pound per week",
+      "calorie_surplus": {
+        "lean_gain": 300,
+        "moderate": 500,
+        "bulk": 750
+      },
+      "macros": {
+        "protein": "20-25%",
+        "carbs": "45-55%",
+        "fat": "25-30%"
+      }
+    },
+    "maintenance": {
+      "calorie_adjustment": 0,
+      "macros": {
+        "protein": "15-25%",
+        "carbs": "45-65%",
+        "fat": "20-35%"
+      }
+    },
+    "muscle_gain": {
+      "protein_requirement": "1.6-2.2g per kg body weight",
+      "timing": "20-30g protein within 2 hours post-workout",
+      "calorie_surplus": 300-500,
+      "resistance_training": "3-4 days per week minimum"
+    }
+  },
+  "health_conditions": {
+    "diabetes": {
+      "carb_counting": "Track all carbohydrates",
+      "fiber_goal": "25-35g per day",
+      "protein": "15-20% of calories",
+      "monitoring": "Blood glucose levels"
+    },
+    "hypertension": {
+      "sodium_limit": "2300mg per day (ideally 1500mg)",
+      "potassium_goal": "3500-4700mg per day",
+      "dash_diet": "Emphasis on fruits, vegetables, whole grains"
+    },
+    "heart_disease": {
+      "saturated_fat": "<7% of calories",
+      "trans_fat": "Avoid completely",
+      "omega_3": "2 servings fish per week",
+      "fiber": "25-35g per day"
+    },
+    "kidney_disease": {
+      "protein_restriction": "0.6-0.8g per kg body weight",
+      "phosphorus_limit": "800-1000mg per day",
+      "potassium_restriction": "May be limited based on stage"
+    }
+  },
+  "age_adjustments": {
+    "children_teens": {
+      "growth_spurts": "Additional 200-500 calories",
+      "protein_needs": "1.0-1.2g per kg",
+      "calcium": "1300mg per day (ages 9-18)"
+    },
+    "adults_19_50": {
+      "standard_calculations": "Use standard BMR formulas",
+      "activity_focus": "Maintain muscle mass"
+    },
+    "adults_51_plus": {
+      "metabolism_decrease": "2-3% per decade after 30",
+      "protein_increase": "1.0-1.2g per kg",
+      "vitamin_d": "600-800 IU per day"
+    },
+    "pregnancy": {
+      "first_trimester": "+0 calories",
+      "second_trimester": "+340 calories",
+      "third_trimester": "+450 calories",
+      "protein_increase": "+25g per day"
+    }
+  },
+  "metabolic_factors": {
+    "muscle_mass": {
+      "impact": "1 pound muscle burns 6-7 calories per day at rest",
+      "importance": "Strength training prevents muscle loss"
+    },
+    "genetics": {
+      "variation": "BMR can vary ±15% between individuals",
+      "factors": ["Thyroid function", "Body composition", "Genetics"]
+    },
+    "environmental": {
+      "cold_exposure": "Can increase BMR by 10-15%",
+      "altitude": "Slight increase in energy expenditure",
+      "stress": "Can affect appetite and metabolism"
+    }
+  }
+}

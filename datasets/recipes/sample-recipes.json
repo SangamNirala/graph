@@ -1,0 +1,285 @@
+[
+  {
+    "id": "recipe_001",
+    "title": "Healthy Banana Smoothie Bowl",
+    "description": "A nutritious and delicious breakfast packed with vitamins and fiber",
+    "prepTime": 10,
+    "servings": 2,
+    "difficulty": "Easy",
+    "category": "Breakfast",
+    "dietaryTags": ["vegetarian", "gluten-free", "dairy-free"],
+    "ingredients": [
+      {
+        "name": "Banana, frozen",
+        "amount": 2,
+        "unit": "medium",
+        "fdcId": 170379,
+        "calories": 178
+      },
+      {
+        "name": "Almond milk, unsweetened",
+        "amount": 1,
+        "unit": "cup",
+        "fdcId": 170459,
+        "calories": 37
+      },
+      {
+        "name": "Chia seeds",
+        "amount": 1,
+        "unit": "tbsp",
+        "fdcId": 170554,
+        "calories": 58
+      },
+      {
+        "name": "Honey",
+        "amount": 1,
+        "unit": "tsp",
+        "fdcId": 169640,
+        "calories": 21
+      },
+      {
+        "name": "Fresh berries (mixed)",
+        "amount": 0.5,
+        "unit": "cup",
+        "fdcId": 171711,
+        "calories": 40
+      }
+    ],
+    "instructions": [
+      "Peel and slice the frozen bananas into chunks",
+      "Add bananas, almond milk, and honey to a blender",
+      "Blend until smooth and creamy (about 2-3 minutes)",
+      "Pour into bowls",
+      "Top with chia seeds and fresh berries",
+      "Serve immediately for best texture"
+    ],
+    "nutritionPer100g": {
+      "calories": 167,
+      "protein": 4.2,
+      "carbs": 32.1,
+      "fat": 3.8,
+      "fiber": 6.2,
+      "sugar": 22.4
+    },
+    "totalNutrition": {
+      "calories": 334,
+      "protein": 8.4,
+      "carbs": 64.2,
+      "fat": 7.6,
+      "fiber": 12.4,
+      "sugar": 44.8
+    },
+    "tips": [
+      "Use very ripe bananas for maximum sweetness",
+      "Adjust almond milk for desired consistency",
+      "Try coconut flakes or nuts as additional toppings"
+    ],
+    "healthBenefits": [
+      "High in potassium for heart health",
+      "Rich in fiber for digestion",
+      "Omega-3 fatty acids from chia seeds",
+      "Antioxidants from berries"
+    ]
+  },
+  {
+    "id": "recipe_002",
+    "title": "Grilled Chicken with Quinoa Salad",
+    "description": "A complete protein meal with ancient grains and fresh vegetables",
+    "prepTime": 25,
+    "cookTime": 20,
+    "servings": 4,
+    "difficulty": "Medium",
+    "category": "Lunch/Dinner",
+    "dietaryTags": ["high-protein", "gluten-free"],
+    "ingredients": [
+      {
+        "name": "Chicken breast, boneless",
+        "amount": 4,
+        "unit": "pieces (6oz each)",
+        "fdcId": 171688,
+        "calories": 660
+      },
+      {
+        "name": "Quinoa, dry",
+        "amount": 1,
+        "unit": "cup",
+        "fdcId": 168917,
+        "calories": 626
+      },
+      {
+        "name": "Bell pepper, mixed colors",
+        "amount": 2,
+        "unit": "medium",
+        "fdcId": 170427,
+        "calories": 62
+      },
+      {
+        "name": "Cucumber",
+        "amount": 1,
+        "unit": "large",
+        "fdcId": 169225,
+        "calories": 45
+      },
+      {
+        "name": "Cherry tomatoes",
+        "amount": 1,
+        "unit": "cup",
+        "fdcId": 170457,
+        "calories": 27
+      },
+      {
+        "name": "Olive oil, extra virgin",
+        "amount": 3,
+        "unit": "tbsp",
+        "fdcId": 171413,
+        "calories": 357
+      },
+      {
+        "name": "Lemon juice, fresh",
+        "amount": 2,
+        "unit": "tbsp",
+        "fdcId": 167746,
+        "calories": 7
+      }
+    ],
+    "instructions": [
+      "Rinse quinoa under cold water until water runs clear",
+      "Cook quinoa in 2 cups water for 15 minutes, then let stand 5 minutes",
+      "Season chicken with salt, pepper, and 1 tbsp olive oil",
+      "Grill chicken for 6-7 minutes per side until internal temp reaches 165°F",
+      "Let chicken rest 5 minutes, then slice",
+      "Dice bell peppers, cucumber, and halve cherry tomatoes",
+      "Fluff quinoa with a fork and mix with vegetables",
+      "Whisk remaining olive oil with lemon juice for dressing",
+      "Toss quinoa salad with dressing",
+      "Serve sliced chicken over quinoa salad"
+    ],
+    "nutritionPer100g": {
+      "calories": 174,
+      "protein": 20.3,
+      "carbs": 12.8,
+      "fat": 5.9,
+      "fiber": 2.1,
+      "sugar": 3.2
+    },
+    "totalNutrition": {
+      "calories": 1784,
+      "protein": 208.8,
+      "carbs": 131.6,
+      "fat": 60.7,
+      "fiber": 21.6,
+      "sugar": 32.8
+    },
+    "mealPrepNotes": [
+      "Can be stored in refrigerator for up to 4 days",
+      "Keep dressing separate until serving",
+      "Chicken can be grilled ahead and reheated"
+    ],
+    "variations": [
+      "Substitute quinoa with brown rice or bulgur",
+      "Add feta cheese for extra protein and flavor",
+      "Use balsamic vinaigrette instead of lemon dressing"
+    ]
+  },
+  {
+    "id": "recipe_003",
+    "title": "Mediterranean Chickpea Stew",
+    "description": "A hearty plant-based meal rich in protein and Mediterranean flavors",
+    "prepTime": 15,
+    "cookTime": 30,
+    "servings": 6,
+    "difficulty": "Easy",
+    "category": "Dinner",
+    "dietaryTags": ["vegan", "vegetarian", "high-fiber", "gluten-free"],
+    "ingredients": [
+      {
+        "name": "Chickpeas, canned (drained)",
+        "amount": 2,
+        "unit": "15oz cans",
+        "fdcId": 173757,
+        "calories": 540
+      },
+      {
+        "name": "Diced tomatoes, canned",
+        "amount": 1,
+        "unit": "28oz can",
+        "fdcId": 170457,
+        "calories": 105
+      },
+      {
+        "name": "Yellow onion, diced",
+        "amount": 1,
+        "unit": "large",
+        "fdcId": 170000,
+        "calories": 60
+      },
+      {
+        "name": "Garlic cloves, minced",
+        "amount": 4,
+        "unit": "cloves",
+        "fdcId": 170000,
+        "calories": 16
+      },
+      {
+        "name": "Spinach, fresh",
+        "amount": 4,
+        "unit": "cups",
+        "fdcId": 168462,
+        "calories": 28
+      },
+      {
+        "name": "Vegetable broth",
+        "amount": 2,
+        "unit": "cups",
+        "fdcId": 170000,
+        "calories": 24
+      },
+      {
+        "name": "Olive oil",
+        "amount": 2,
+        "unit": "tbsp",
+        "fdcId": 171413,
+        "calories": 238
+      }
+    ],
+    "instructions": [
+      "Heat olive oil in a large pot over medium heat",
+      "Sauté onion until translucent (about 5 minutes)",
+      "Add minced garlic and cook for another minute",
+      "Add diced tomatoes, chickpeas, and vegetable broth",
+      "Season with salt, pepper, oregano, and bay leaves",
+      "Bring to a boil, then reduce heat and simmer for 20 minutes",
+      "Add fresh spinach and cook until wilted (2-3 minutes)",
+      "Taste and adjust seasoning as needed",
+      "Remove bay leaves before serving",
+      "Serve hot with crusty bread or over rice"
+    ],
+    "nutritionPer100g": {
+      "calories": 101,
+      "protein": 5.2,
+      "carbs": 15.3,
+      "fat": 2.8,
+      "fiber": 4.7,
+      "sugar": 4.1
+    },
+    "totalNutrition": {
+      "calories": 1011,
+      "protein": 52.2,
+      "carbs": 153.0,
+      "fat": 28.0,
+      "fiber": 47.0,
+      "sugar": 41.0
+    },
+    "healthBenefits": [
+      "High in plant-based protein from chickpeas",
+      "Rich in iron from spinach",
+      "Heart-healthy monounsaturated fats from olive oil",
+      "High fiber content supports digestive health"
+    ],
+    "storage": [
+      "Refrigerate for up to 5 days",
+      "Freeze for up to 3 months",
+      "Reheat gently on stovetop or microwave"
+    ]
+  }
+]

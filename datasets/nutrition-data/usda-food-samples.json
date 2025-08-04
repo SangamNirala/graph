@@ -1,0 +1,297 @@
+[
+  {
+    "fdcId": 170379,
+    "dataType": "Foundation",
+    "description": "Banana, raw",
+    "foodNutrients": [
+      {
+        "nutrientId": 1008,
+        "nutrientName": "Energy",
+        "unitName": "kcal",
+        "value": 89
+      },
+      {
+        "nutrientId": 1003,
+        "nutrientName": "Protein",
+        "unitName": "g", 
+        "value": 1.09
+      },
+      {
+        "nutrientId": 1004,
+        "nutrientName": "Total lipid (fat)",
+        "unitName": "g",
+        "value": 0.33
+      },
+      {
+        "nutrientId": 1005,
+        "nutrientName": "Carbohydrate, by difference",
+        "unitName": "g",
+        "value": 22.84
+      },
+      {
+        "nutrientId": 1079,
+        "nutrientName": "Fiber, total dietary",
+        "unitName": "g",
+        "value": 2.6
+      },
+      {
+        "nutrientId": 1087,
+        "nutrientName": "Calcium, Ca",
+        "unitName": "mg",
+        "value": 5
+      },
+      {
+        "nutrientId": 1089,
+        "nutrientName": "Iron, Fe",
+        "unitName": "mg",
+        "value": 0.26
+      },
+      {
+        "nutrientId": 1162,
+        "nutrientName": "Vitamin C, total ascorbic acid",
+        "unitName": "mg",
+        "value": 8.7
+      },
+      {
+        "nutrientId": 1177,
+        "nutrientName": "Folate, total",
+        "unitName": "mcg",
+        "value": 20
+      }
+    ],
+    "category": "Fruits and Fruit Juices",
+    "servingSize": 100,
+    "servingUnit": "g",
+    "householdServingFullText": "1 medium (7\" to 7-7/8\" long)"
+  },
+  {
+    "fdcId": 171688,
+    "dataType": "Foundation", 
+    "description": "Chicken breast, meat only, cooked, roasted",
+    "foodNutrients": [
+      {
+        "nutrientId": 1008,
+        "nutrientName": "Energy",
+        "unitName": "kcal",
+        "value": 165
+      },
+      {
+        "nutrientId": 1003,
+        "nutrientName": "Protein", 
+        "unitName": "g",
+        "value": 31.02
+      },
+      {
+        "nutrientId": 1004,
+        "nutrientName": "Total lipid (fat)",
+        "unitName": "g",
+        "value": 3.57
+      },
+      {
+        "nutrientId": 1005,
+        "nutrientName": "Carbohydrate, by difference",
+        "unitName": "g",
+        "value": 0
+      },
+      {
+        "nutrientId": 1087,
+        "nutrientName": "Calcium, Ca",
+        "unitName": "mg",
+        "value": 15
+      },
+      {
+        "nutrientId": 1089,
+        "nutrientName": "Iron, Fe", 
+        "unitName": "mg",
+        "value": 1.04
+      },
+      {
+        "nutrientId": 1092,
+        "nutrientName": "Potassium, K",
+        "unitName": "mg",
+        "value": 256
+      },
+      {
+        "nutrientId": 1106,
+        "nutrientName": "Vitamin A, IU",
+        "unitName": "IU",
+        "value": 21
+      }
+    ],
+    "category": "Poultry Products",
+    "servingSize": 100,
+    "servingUnit": "g",
+    "householdServingFullText": "1 breast, bone and skin removed"
+  },
+  {
+    "fdcId": 170457,
+    "dataType": "Foundation",
+    "description": "Broccoli, raw",
+    "foodNutrients": [
+      {
+        "nutrientId": 1008,
+        "nutrientName": "Energy",
+        "unitName": "kcal",
+        "value": 34
+      },
+      {
+        "nutrientId": 1003,
+        "nutrientName": "Protein",
+        "unitName": "g",
+        "value": 2.82
+      },
+      {
+        "nutrientId": 1004,
+        "nutrientName": "Total lipid (fat)",
+        "unitName": "g",
+        "value": 0.37
+      },
+      {
+        "nutrientId": 1005,
+        "nutrientName": "Carbohydrate, by difference",
+        "unitName": "g",
+        "value": 6.64
+      },
+      {
+        "nutrientId": 1079,
+        "nutrientName": "Fiber, total dietary",
+        "unitName": "g",
+        "value": 2.6
+      },
+      {
+        "nutrientId": 1087,
+        "nutrientName": "Calcium, Ca",
+        "unitName": "mg",
+        "value": 47
+      },
+      {
+        "nutrientId": 1162,
+        "nutrientName": "Vitamin C, total ascorbic acid",
+        "unitName": "mg",
+        "value": 89.2
+      },
+      {
+        "nutrientId": 1106,
+        "nutrientName": "Vitamin A, IU",
+        "unitName": "IU", 
+        "value": 623
+      }
+    ],
+    "category": "Vegetables and Vegetable Products",
+    "servingSize": 100,
+    "servingUnit": "g",
+    "householdServingFullText": "1 cup chopped"
+  },
+  {
+    "fdcId": 174292,
+    "dataType": "Foundation",
+    "description": "Rice, white, long-grain, regular, cooked",
+    "foodNutrients": [
+      {
+        "nutrientId": 1008,
+        "nutrientName": "Energy",
+        "unitName": "kcal",
+        "value": 130
+      },
+      {
+        "nutrientId": 1003,
+        "nutrientName": "Protein",
+        "unitName": "g",
+        "value": 2.69
+      },
+      {
+        "nutrientId": 1004,
+        "nutrientName": "Total lipid (fat)",
+        "unitName": "g",
+        "value": 0.28
+      },
+      {
+        "nutrientId": 1005,
+        "nutrientName": "Carbohydrate, by difference",
+        "unitName": "g",
+        "value": 28.17
+      },
+      {
+        "nutrientId": 1079,
+        "nutrientName": "Fiber, total dietary",
+        "unitName": "g",
+        "value": 0.4
+      },
+      {
+        "nutrientId": 1087,
+        "nutrientName": "Calcium, Ca",
+        "unitName": "mg",
+        "value": 10
+      },
+      {
+        "nutrientId": 1089,
+        "nutrientName": "Iron, Fe",
+        "unitName": "mg",
+        "value": 1.2
+      }
+    ],
+    "category": "Cereal Grains and Pasta",
+    "servingSize": 100,
+    "servingUnit": "g",
+    "householdServingFullText": "1 cup"
+  },
+  {
+    "fdcId": 171287,
+    "dataType": "Foundation",
+    "description": "Egg, whole, raw, fresh",
+    "foodNutrients": [
+      {
+        "nutrientId": 1008,
+        "nutrientName": "Energy",
+        "unitName": "kcal",
+        "value": 143
+      },
+      {
+        "nutrientId": 1003,
+        "nutrientName": "Protein",
+        "unitName": "g",
+        "value": 12.56
+      },
+      {
+        "nutrientId": 1004,
+        "nutrientName": "Total lipid (fat)",
+        "unitName": "g",
+        "value": 9.51
+      },
+      {
+        "nutrientId": 1005,
+        "nutrientName": "Carbohydrate, by difference",
+        "unitName": "g",
+        "value": 0.72
+      },
+      {
+        "nutrientId": 1087,
+        "nutrientName": "Calcium, Ca",
+        "unitName": "mg",
+        "value": 56
+      },
+      {
+        "nutrientId": 1089,
+        "nutrientName": "Iron, Fe",
+        "unitName": "mg",
+        "value": 1.75
+      },
+      {
+        "nutrientId": 1106,
+        "nutrientName": "Vitamin A, IU",
+        "unitName": "IU",
+        "value": 540
+      },
+      {
+        "nutrientId": 1114,
+        "nutrientName": "Vitamin D",
+        "unitName": "IU",
+        "value": 82
+      }
+    ],
+    "category": "Dairy and Egg Products",
+    "servingSize": 100,
+    "servingUnit": "g",
+    "householdServingFullText": "1 large egg"
+  }
+]
