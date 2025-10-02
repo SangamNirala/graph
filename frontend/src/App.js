@@ -93,10 +93,12 @@ function App() {
   useEffect(() => {
     const fetchData = async () => {
       try {
+        console.log('🔄 Fetching prediction data for idx:', debouncedIdx, 'API_URL:', API_URL);
         const res = await axios.post(API_URL, { idx: debouncedIdx, confidence });
+        console.log('✅ Prediction data received:', res.data.current_time);
         setData(res.data);
       } catch (error) {
-        console.error("Failed to fetch data", error);
+        console.error("❌ Failed to fetch prediction data:", error);
       }
     };
     fetchData();
