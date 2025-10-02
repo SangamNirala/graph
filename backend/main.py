@@ -37,7 +37,7 @@ class PredictRequest(BaseModel):
     idx: int
     confidence: bool = False
 
-@app.post('/predict')
+@app.post('/api/predict')
 def predict(req: PredictRequest):
     idx = req.idx
     if idx < window_in or idx > len(df) - window_out - 1:
