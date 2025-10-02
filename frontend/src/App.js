@@ -4,7 +4,7 @@ import Plot from 'react-plotly.js';
 import axios from 'axios';
 
 // --- Configuration ---
-const API_URL = 'http://localhost:8000/predict';
+const API_URL = `${process.env.REACT_APP_BACKEND_URL}/api/predict`;
 const WINDOW_IN = 24;
 const WINDOW_OUT = 24;
 const MIN_IDX = WINDOW_IN;
