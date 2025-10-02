@@ -5,6 +5,10 @@ import axios from 'axios';
 
 // --- Configuration ---
 const API_URL = `${process.env.REACT_APP_BACKEND_URL}/api/predict`;
+console.log('🔧 Environment check:', {
+  REACT_APP_BACKEND_URL: process.env.REACT_APP_BACKEND_URL,
+  API_URL: API_URL
+});
 const WINDOW_IN = 24;
 const WINDOW_OUT = 24;
 const MIN_IDX = WINDOW_IN;
