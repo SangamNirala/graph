@@ -93,8 +93,13 @@ function App() {
     setData(result);
   };
 
-  // Fetch data only when the debounced index changes
+  // Fetch data only when the debounced index changes and allTemps is loaded
   useEffect(() => {
+    if (allTemps.length === 0) {
+      console.log('⏳ Waiting for temperature data to load...');
+      return;
+    }
+    
     const fetchData = async () => {
       try {
         console.log('🔄 Fetching prediction data for idx:', debouncedIdx, 'API_URL:', API_URL);
@@ -106,7 +111,7 @@ function App() {
       }
     };
     fetchData();
-  }, [debouncedIdx, confidence]);
+  }, [debouncedIdx, confidence, allTemps.length]);
 
   // Handle auto-simulation mode
   useEffect(() => {
