@@ -33,6 +33,10 @@ df['day_of_year_cos'] = np.cos(2 * np.pi * df['day_of_year']/365)
 
 window_in, window_out = 24, 24
 
+@app.get("/api/health")
+def health():
+    return {"status": "healthy"}
+
 class PredictRequest(BaseModel):
     idx: int
     confidence: bool = False
