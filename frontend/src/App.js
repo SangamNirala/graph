@@ -62,7 +62,7 @@ function App() {
     const y = allTemps.slice(newIdx + windowIn, newIdx + windowIn + windowOut);
 
     if (X.length === windowIn && y.length === windowOut) {
-      await fetch("http://localhost:8000/train", {
+      await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/train`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
