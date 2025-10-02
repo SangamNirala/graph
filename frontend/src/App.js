@@ -44,6 +44,10 @@ function App() {
       .then(json => {
         setAllTemps(json.temps);
         setAllAdditionalFeatures(json.features);
+        console.log('✅ Data loaded successfully:', json.temps.length, 'temperature records');
+      })
+      .catch(error => {
+        console.error('❌ Failed to load data.json:', error);
       });
   }, []);
 
